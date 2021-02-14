@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
+:root {
+  --borderSizeNormal: 7px;
+  --borderSizeThin: 5px;
+  --borderSizeInput: 2px;
+  --borderColor: #444;
+  --borderRadiusInput: 6px;
+  --borderRadiusBox: 3px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,17 +18,17 @@ body {
   width: 100%;
   margin: 20px auto;
   border: 1px solid #888;
-width: 80%;
+  width: 80%;
 }
-h1{
+h1 {
   margin: 0;
-  font-size: 50px
+  font-size: 50px;
 }
-h2{
+h2 {
   margin: 0;
-  font-size: 40px
+  font-size: 40px;
 }
-h3{
+h3 {
   font-size: 25px;
   margin: 15px 0 10px 0;
   font-weight: 400;
@@ -34,11 +43,40 @@ h3{
   padding: 20px 40px;
 }
 
-.intro{
-
+.intro {
+  margin-bottom: 5rem;
 }
-.intro-box{
-  border: 3px #000 solid;
+.intro-box {
+  border: var(--borderSizeNormal) var(--borderColor) solid;
   display: inline-block;
   padding: 2rem;
+}
+.part-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.small-box-container {
+  margin-top: 3rem;
+}
+.small-box-title {
+  font-size: 1.6rem;
+  margin-bottom: 5px;
+}
+
+.small-box {
+  border: var(--borderSizeThin) solid var(--borderColor);
+  width: 48%;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: var(--borderRadiusBox);
+}
+.normal-input-title {
+  font-size: 1.2rem;
+}
+.normal-input {
+  border: solid var(--borderSizeInput) var(--borderColor);
+  border-radius: var(--borderRadiusInput);
+  min-width: 40%;
+  margin-top: .6rem;
 }

@@ -7,6 +7,8 @@
   --borderColor: #444;
   --borderRadiusInput: 6px;
   --borderRadiusBox: 3px;
+  --primary-background-color: #eee;
+  --backgroubd-color-white: #fff;
 }
 
 * {
@@ -17,19 +19,19 @@ body {
   font-family: Lato, sans-serif;
   width: 100%;
   margin: 20px auto;
-  border: 1px solid #888;
-  width: 80%;
+  border: 1px solid #eee;
+  width: 97%;
 }
 h1 {
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
 }
 h2 {
   margin: 0;
-  font-size: 40px;
+  font-size: 30px;
 }
 h3 {
-  font-size: 25px;
+  font-size: 20px;
   margin: 15px 0 10px 0;
   font-weight: 400;
 }
@@ -38,7 +40,6 @@ h3 {
   text-align: center;
 }
 .container {
-  max-width: 1100px;
   margin: 0 auto;
   padding: 20px 40px;
 }
@@ -52,31 +53,116 @@ h3 {
   padding: 2rem;
 }
 .part-title {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .small-box-container {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+  width: 100%;
 }
 .small-box-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
 }
 
 .small-box {
   border: var(--borderSizeThin) solid var(--borderColor);
-  width: 48%;
+  width: 97%;
   display: inline-block;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   border-radius: var(--borderRadiusBox);
+  display: flex;
+  background-color: var(--primary-background-color);
+  min-height: 290px;
 }
 .normal-input-title {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
 }
 .normal-input {
   border: solid var(--borderSizeInput) var(--borderColor);
   border-radius: var(--borderRadiusInput);
   min-width: 40%;
-  margin-top: .6rem;
+  padding: 10px 5px;
+  font-size: 0.9rem;
+  max-width: 97%;
+  background-color: var(--backgroubd-color-white);
+}
+.normal-input-container {
+  margin-top: 1rem;
+}
+.small-box-right,
+.small-box-left {
+  width: 100%;
+}
+.small-box-left {
+  margin-right: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.school-name {
+  /* width: 200%; */
+}
+.school {
+  display: block;
+}
+
+.flex-2 {
+  display: flex;
+}
+
+.flex-3 {
+  display: flex;
+}
+
+.gap-right {
+  margin-right: 0.8rem;
+}
+
+.adress,
+.town {
+  width: 65%;
+}
+
+.zip,
+.type {
+  width: 33%;
+}
+.ghost {
+  opacity: 0;
+}
+
+
+.additional-right .normal-input-container{
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.additional-left, .additional-right{
+  font-size: 1rem;
+}
+
+.additional{
+  display: block;
+}
+
+.additional .normal-input-container{
+  display: flex;
+}
+.text-container{
+ width: 75%;
+}
+.additional .normal-input-container .normal-input{
+  max-height: 2.5rem;
+}
+
+.seven {
+  min-width: 7.5rem;
+  margin-right: .5rem;
+  margin-left: auto ;
 }
